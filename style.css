@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: var(--bg-color);
+}
+
+/* Variables  */
+:root{
+    --bg-color: #1D1E23;
+    --primary-color: #A4B5CA;
+    --text-color: #ffffff;
+}
+
+
+/* Header Nav Starting  */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.navbar h3{
+    color: var(--primary-color);
+    font-size: 30px;
+}
+
+nav li {
+    list-style: none;
+}
+
+.title{
+    font-size: 60px;
+    color: var(--primary-color);
+}
+section{
+    margin: 200px 0;
+}
+
+.navbar nav li{
+    display: inline;
+    margin-right: 30px;
+}
+
+nav li a{
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 300;
+}
+
+main{
+    padding: 0 200px;
+}
+
+/* Banner starting  */
+.home-name{
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.content-side h1{
+    color: #A4B5CA;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.content-side h1 span{
+    font-weight: 400;
+}
+
+.home-para{
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+.btn-primary{
+    text-decoration: none;
+    color: var(--bg-color);
+    background-color: var(--primary-color);
+    padding: 20px 30px;
+    border: none;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+}
+
+
+/* About Starting  */
+
+.about-padding-left{
+    padding: 0 160px;
+}
+.about-text{
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+.img-and-skill{
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill{
+    border: 3px solid #A4B5CA;
+    width: 100%;
+    margin-left: 40px;
+    padding: 40px;
+    height: auto;
+    height: 592px;
+}
+
+.skill h3{
+    color: var(--text-color);
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+.skill-list{
+    display: flex;
+    margin-top: 10px;
+}
+
+.skill-list p{
+    margin-right: 20px;
+    color: var(--text-color);
+}
+
+/* Work Starting  */
+.work-row{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 100%;
+    gap: 30px;
+    margin-top: 40px;
+    padding: 0 160px;
+}
+
+.work-img img{
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+.single-work{
+    border-radius: 20px;
+    box-shadow: 1px 8px 31px 0px rgba(0, 0, 0, 0.25);
+    background: rgb(29, 30, 35);
+}
+
+.github-link{
+    padding: 30px;
+}
+
+.github-link h3{
+    text-align: end;
+    font-size: 30px;
+    color: var(--text-color);
+}
+
+/* Contact start  */
+
+.forms{
+    padding: 0 160px;
+    display: flex;
+    justify-content: center;
+}
+
+.forms input{
+    width: 899px;
+    padding: 20px;
+    border: none;
+    border-radius: 14px;
+    box-shadow: 0px 0px 72px 13px rgba(0, 0, 0, 0.25);
+    background: rgb(29, 30, 35);
+    margin-bottom: 20px;
+    display: block;
+    outline: none;
+    color: var(--text-color);
+    font-size: 20px;
+}
+
+textarea{
+    width: 899px;
+    height: 422px;
+    border-radius: 14px;
+    box-shadow: 0px 0px 72px 13px rgba(0, 0, 0, 0.25);
+    background: rgb(29, 30, 35);
+    border: none;
+    outline: none;
+    padding: 20px;
+    color: var(--text-color);
+    font-size: 20px;
+}
+
+/* Footer  */
+footer{
+    box-shadow: 0px 0px 22px 18px rgba(0, 0, 0, 0.25);
+    background: rgb(29, 30, 35);
+    padding: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+/* Responsive  */
+/* Media Queries  */
+@media screen and (max-width: 768px) {
+    .navbar{
+        display: none;
+    }
+
+    .banner{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .banner-img-side{
+        display: none;
+    }
+    main{
+      padding: 0 50px;
+    }
+
+    .about-padding-left{
+        padding: 0;
+    }
+
+    .img-and-skill{
+        flex-direction: column;
+    }
+
+    .skill{
+        margin: 0;
+        height: auto;
+    }
+
+    .img-and-skill img{
+        display: none;
+    }
+
+    .skill-list{
+        display: block;
+    }
+
+    .skill-list p{
+        margin-bottom: 30px;
+    }
+
+    .work-row{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        width: 100%;
+        gap: 30px;
+        margin-top: 40px;
+        padding: 0 0;
+    }
+
+    .forms{
+        padding: 0 0;
+        display: block;
+        width: 100%;
+    }
+
+    form input{
+        width: 100% !important;
+    }
+
+    textarea{
+        width: 100% !important;
+    }
+}
